@@ -10,7 +10,7 @@ def test_book_id():
     assert data["title"] == "The Hobbit"
     assert data["author"] == "J.R.R. Tolkien"
     assert data["publication_year"] == 1937
-    assert data["genre"] == "Sci-Fi"
+    assert data["genre"] == "Science Fiction"
 
     response = client.get("/books/2")
     assert response.status_code == 200
